@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary-color: #fff;
+$background-color: #fff;
+$font-color: #000;
+
+body {
+  color: $font-color;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var($background-color))
+    )
+    rgb(var($background-color));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
